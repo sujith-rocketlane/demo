@@ -14,6 +14,21 @@ import {
 } from "react-router-dom";
 
 
+const Feature1 = () => {
+    return (
+        <h1> i am in feature1 page </h1>
+    );
+
+}
+
+const Feature2 = () => {
+    return (
+        <h1> i am in feature2 page </h1>
+    );
+
+}
+
+
 const Navbar = (props) => {
     return (
         <div className = "navbar">
@@ -24,6 +39,8 @@ const Navbar = (props) => {
                     <li><Link to = "/display">View</Link></li>
                     <li><Link to = "/delete">Delete</Link></li>
                     <li><Link to = "/update">Update</Link></li>
+                    <li><Link to = "/feature1">feature1</Link></li>
+                    <li><Link to = "/feature2">feature2</Link></li>
                 </ul>
                 <Routes>
                     <Route path = "/" element = { <Home /> } />
@@ -31,6 +48,8 @@ const Navbar = (props) => {
                     <Route path = "/display" element = { <Display /> }></Route>
                     <Route path = "/delete" element = { <Delete /> }></Route>
                     <Route path = "/update" element = { <Update /> }></Route>
+                    <Route path = "feature1" element = { <Feature1 /> }></Route>
+                    <Route path = "feature2" element = { <Feature2 /> }></Route>
                 </Routes>
             </Router>            
         </div>
