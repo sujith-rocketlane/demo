@@ -7,6 +7,7 @@ import Navbar from './navbar';
 function App(){
   return (
     <div className = 'home'>
+      <h1> hello there </h1>
       <Navbar />
     </div>
   );
